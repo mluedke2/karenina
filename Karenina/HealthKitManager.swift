@@ -51,8 +51,6 @@ class HealthKitManager: NSObject {
   
   static func saveMockHeartData() {
     
-    print("test")
-    
     // 1. Create a heartrate BPM Sample
     let heartRateType = HKQuantityType.quantityTypeForIdentifier(HKQuantityTypeIdentifierHeartRate)!
     let heartRateQuantity = HKQuantity(unit: HKUnit(fromString: "count/min"), doubleValue: Double(arc4random_uniform(80) + 100))
