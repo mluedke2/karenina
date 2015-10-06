@@ -61,16 +61,7 @@ class ViewController: UIViewController {
   
   @IBAction func authorize(sender: AnyObject)
   {
-    HealthKitManager.authorizeHealthKit { (authorized,  error) -> Void in
-      if authorized {
-        print("HealthKit authorization received.")
-      } else {
-        print("HealthKit authorization denied!")
-        if let error = error {
-          print("\(error)")
-        }
-      }
-    }
+    HealthKitManager.authorizeHealthKit()
   }
 }
 

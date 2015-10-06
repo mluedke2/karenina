@@ -14,39 +14,20 @@ class HealthKitManager: NSObject {
   static let healthKitStore = HKHealthStore()
   static var timer: NSTimer?
   
-  static func authorizeHealthKit(completion: ((success:Bool, error:NSError!) -> Void)!)
+  static func authorizeHealthKit()
   {
-    // 1. Set the types you want to read from HK Store
     let healthKitTypesToRead: Set = [
       HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierHeartRate)!,
       HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierDistanceWalkingRunning)!
     ]
     
-    // 2. Set the types you want to write to HK Store
     let healthKitTypesToWrite: Set = [
       HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierHeartRate)!,
       HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierDistanceWalkingRunning)!
     ]
     
-    // 3. If the store is not available (for instance, iPad) return an error and don't go on.
-    if !HKHealthStore.isHealthDataAvailable()
-    {
-      let error = NSError(domain: "com.raywenderlich.Karenina", code: 2, userInfo: [NSLocalizedDescriptionKey:"HealthKit is not available in this Device"])
-      if( completion != nil )
-      {
-        completion(success:false, error:error)
-      }
-      return;
-    }
-    
-    // 4.  Request HealthKit authorization
-    healthKitStore.requestAuthorizationToShareTypes(healthKitTypesToWrite, readTypes: healthKitTypesToRead) { (success, error) -> Void in
-      
-      if( completion != nil )
-      {
-        completion(success:success,error:error)
-      }
-    }
+    healthKitStore.requestAuthorizationToShareTypes(healthKitTypesToWrite,
+      readTypes: healthKitTypesToRead) { _, _ in }
   }
   
   static func saveMockHeartData() {
