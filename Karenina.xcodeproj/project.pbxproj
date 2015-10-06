@@ -103,7 +103,7 @@
 		FA5A763F1BC072B6006DAC35 /* chill_preview_3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chill_preview_3.mp3; sourceTree = "<group>"; };
 		FA5A76411BC0731F006DAC35 /* light_preview_3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = light_preview_3.mp3; sourceTree = "<group>"; };
 		FA5A76431BC07420006DAC35 /* light_preview_2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = light_preview_2.mp3; sourceTree = "<group>"; };
-		FA5A76451BC0747B006DAC35 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FA5A76451BC0747B006DAC35 /* MUSIC_LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = MUSIC_LICENSE.md; sourceTree = "<group>"; };
 		FA64CDBD1BBF6E6B0052DF0D /* MusicStepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicStepViewController.swift; sourceTree = "<group>"; };
 		FA64CDC11BBF77FA0052DF0D /* MusicStep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicStep.swift; sourceTree = "<group>"; };
 		FA7C5AA91BB9160F00482145 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
@@ -213,7 +213,7 @@
 		FA5A763A1BC07208006DAC35 /* Music clips */ = {
 			isa = PBXGroup;
 			children = (
-				FA5A76451BC0747B006DAC35 /* README.md */,
+				FA5A76451BC0747B006DAC35 /* MUSIC_LICENSE.md */,
 				FA5A76431BC07420006DAC35 /* light_preview_2.mp3 */,
 				FA5A76411BC0731F006DAC35 /* light_preview_3.mp3 */,
 				FA5A763F1BC072B6006DAC35 /* chill_preview_3.mp3 */,
