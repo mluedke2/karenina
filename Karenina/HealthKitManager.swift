@@ -14,28 +14,25 @@ class HealthKitManager: NSObject {
   static let healthKitStore = HKHealthStore()
   static var timer: NSTimer?
   
-  static func authorizeHealthKit()
-  {
-    let healthKitTypesToRead: Set = [
+  static func authorizeHealthKit() {
+    
+    let healthKitTypes: Set = [
       HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierHeartRate)!,
       HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierDistanceWalkingRunning)!
     ]
     
-    let healthKitTypesToWrite: Set = [
-      HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierHeartRate)!,
-      HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierDistanceWalkingRunning)!
-    ]
-    
-    healthKitStore.requestAuthorizationToShareTypes(healthKitTypesToWrite,
-      readTypes: healthKitTypesToRead) { _, _ in }
+    healthKitStore.requestAuthorizationToShareTypes(healthKitTypes,
+      readTypes: healthKitTypes) { _, _ in }
   }
   
   static func saveMockHeartData() {
     
     // 1. Create a heartrate BPM Sample
     let heartRateType = HKQuantityType.quantityTypeForIdentifier(HKQuantityTypeIdentifierHeartRate)!
-    let heartRateQuantity = HKQuantity(unit: HKUnit(fromString: "count/min"), doubleValue: Double(arc4random_uniform(80) + 100))
-    let heartSample = HKQuantitySample(type: heartRateType, quantity: heartRateQuantity, startDate: NSDate(), endDate: NSDate())
+    let heartRateQuantity = HKQuantity(unit: HKUnit(fromString: "count/min"),
+      doubleValue: Double(arc4random_uniform(80) + 100))
+    let heartSample = HKQuantitySample(type: heartRateType,
+      quantity: heartRateQuantity, startDate: NSDate(), endDate: NSDate())
     
     // 2. Save the sample in the store
     healthKitStore.saveObject(heartSample, withCompletion: { (success, error) -> Void in
@@ -46,7 +43,11 @@ class HealthKitManager: NSObject {
   }
   
   static func startMockHeartData() {
-    timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "saveMockHeartData", userInfo: nil, repeats: true)
+    timer = NSTimer.scheduledTimerWithTimeInterval(1.0,
+      target: self,
+      selector: "saveMockHeartData",
+      userInfo: nil,
+      repeats: true)
   }
   
   static func stopMockHeartData() {
