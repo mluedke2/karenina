@@ -7,7 +7,6 @@
 //
 
 import AVFoundation
-import HealthKit
 import ResearchKit
 
 class ViewController: UIViewController {
@@ -59,8 +58,7 @@ class ViewController: UIViewController {
     HealthKitManager.startMockHeartData()
   }
   
-  @IBAction func authorize(sender: AnyObject)
-  {
+  @IBAction func authorize(sender: AnyObject) {
     HealthKitManager.authorizeHealthKit()
   }
 }
