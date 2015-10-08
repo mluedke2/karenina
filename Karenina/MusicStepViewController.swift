@@ -13,8 +13,8 @@ class MusicStepViewController: ORKActiveStepViewController {
   
   var audioPlayer: AVAudioPlayer?
   
-  override func viewDidLoad() {
-    super.viewDidLoad()
+  override func start() {
+    super.start()
     
     if let step = step as? MusicStep {
       do {
@@ -22,5 +22,10 @@ class MusicStepViewController: ORKActiveStepViewController {
         audioPlayer?.play()
       } catch {}
     }
+  }
+  
+  override func stepDidFinish() {
+    super.stepDidFinish()
+    audioPlayer?.stop()
   }
 }

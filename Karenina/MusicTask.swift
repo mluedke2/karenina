@@ -14,7 +14,7 @@ public var MusicTask: ORKOrderedTask {
   
   let instructionStep = ORKInstructionStep(identifier: "intruction")
   instructionStep.title = "Music + Heart Rate"
-  instructionStep.text = "Please listen to a randomized music clip for 15 seconds, and we'll record your heart rate."
+  instructionStep.text = "Please listen to a randomized music clip for 30 seconds, and we'll record your heart rate."
   
   steps += [instructionStep]
   
@@ -24,11 +24,10 @@ public var MusicTask: ORKOrderedTask {
   
   musicStep.clip = MusicClip.random()
   
-  musicStep.stepDuration = 20
+  musicStep.stepDuration = 30
   musicStep.recorderConfigurations = [configuration]
   
   // a bunch of boilerplate configuration
-  musicStep.spokenInstruction = "Please listen for 20 seconds."
   musicStep.shouldShowDefaultTimer = true
   musicStep.shouldStartTimerAutomatically = true
   musicStep.shouldContinueOnFinish = true
@@ -36,7 +35,7 @@ public var MusicTask: ORKOrderedTask {
   musicStep.shouldPlaySoundOnFinish = true
   musicStep.shouldVibrateOnStart = true
   musicStep.shouldVibrateOnFinish = true
-  musicStep.text = "Please listen for 20 seconds."
+  musicStep.title = "Please listen for 30 seconds."
   
   steps += [musicStep]
   
