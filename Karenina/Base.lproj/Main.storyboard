@@ -30,7 +30,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxQ-bb-lAw">
-                                <rect key="frame" x="277" y="135" width="48" height="30"/>
+                                <rect key="frame" x="277" y="134" width="48" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="48" id="MOq-0f-ozP"/>
                                     <constraint firstAttribute="height" constant="30" id="c4I-Hz-Xgq"/>
@@ -43,7 +43,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bt-w2-x75">
-                                <rect key="frame" x="260" y="190" width="82" height="30"/>
+                                <rect key="frame" x="260" y="184" width="82" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="82" id="axk-IY-lcH"/>
                                     <constraint firstAttribute="height" constant="30" id="ml8-bm-Tc5"/>
@@ -56,7 +56,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ch-eh-Dm7">
-                                <rect key="frame" x="261" y="244" width="79" height="30"/>
+                                <rect key="frame" x="261" y="234" width="79" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="TFV-sd-yez"/>
                                     <constraint firstAttribute="width" constant="79" id="b0L-Ls-1WA"/>
@@ -69,7 +69,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZe-KE-DTr">
-                                <rect key="frame" x="284" y="296" width="34" height="30"/>
+                                <rect key="frame" x="284" y="284" width="34" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="34" id="tyk-Vs-Bt6"/>
                                     <constraint firstAttribute="height" constant="30" id="upW-lm-IEM"/>
@@ -80,7 +80,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfx-Hw-6tF">
-                                <rect key="frame" x="267" y="339" width="66" height="30"/>
+                                <rect key="frame" x="267" y="334" width="66" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="66" id="ePd-DZ-eO6"/>
                                     <constraint firstAttribute="height" constant="30" id="zRh-oj-cIF"/>
@@ -91,7 +91,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Abs-Yr-hTc">
-                                <rect key="frame" x="278" y="392" width="46" height="30"/>
+                                <rect key="frame" x="278" y="384" width="46" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="WeK-fN-6Y1"/>
                                     <constraint firstAttribute="width" constant="46" id="imj-lv-An8"/>
@@ -104,19 +104,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="5ch-eh-Dm7" firstAttribute="top" secondItem="0bt-w2-x75" secondAttribute="bottom" constant="24" id="GS7-y8-QLh"/>
+                            <constraint firstItem="5ch-eh-Dm7" firstAttribute="top" secondItem="0bt-w2-x75" secondAttribute="bottom" constant="20" id="GS7-y8-QLh"/>
                             <constraint firstItem="Sa6-Gx-kzM" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="64" id="JpW-tu-vMS"/>
-                            <constraint firstItem="gxQ-bb-lAw" firstAttribute="top" secondItem="Sa6-Gx-kzM" secondAttribute="bottom" constant="21" id="Mic-Kq-Zna"/>
+                            <constraint firstItem="gxQ-bb-lAw" firstAttribute="top" secondItem="Sa6-Gx-kzM" secondAttribute="bottom" constant="20" id="Mic-Kq-Zna"/>
                             <constraint firstAttribute="centerX" secondItem="0bt-w2-x75" secondAttribute="centerX" constant="-1" id="NAn-HU-qWt"/>
                             <constraint firstItem="Abs-Yr-hTc" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="1" id="NIf-Cl-oIx"/>
-                            <constraint firstItem="0bt-w2-x75" firstAttribute="top" secondItem="gxQ-bb-lAw" secondAttribute="bottom" constant="25" id="VFV-ET-zUC"/>
+                            <constraint firstItem="0bt-w2-x75" firstAttribute="top" secondItem="gxQ-bb-lAw" secondAttribute="bottom" constant="20" id="VFV-ET-zUC"/>
                             <constraint firstAttribute="centerX" secondItem="5ch-eh-Dm7" secondAttribute="centerX" constant="-0.5" id="VIG-rt-ry0"/>
                             <constraint firstAttribute="centerX" secondItem="gxQ-bb-lAw" secondAttribute="centerX" constant="-1" id="b2T-8n-qQe"/>
                             <constraint firstItem="qfx-Hw-6tF" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="gSD-tN-GEj"/>
-                            <constraint firstItem="XZe-KE-DTr" firstAttribute="top" secondItem="5ch-eh-Dm7" secondAttribute="bottom" constant="22" id="mV4-AQ-Vhh"/>
+                            <constraint firstItem="XZe-KE-DTr" firstAttribute="top" secondItem="5ch-eh-Dm7" secondAttribute="bottom" constant="20" id="mV4-AQ-Vhh"/>
                             <constraint firstAttribute="centerX" secondItem="Sa6-Gx-kzM" secondAttribute="centerX" id="pcs-tk-mkX"/>
-                            <constraint firstItem="Abs-Yr-hTc" firstAttribute="top" secondItem="qfx-Hw-6tF" secondAttribute="bottom" constant="23" id="r8t-ve-dOt"/>
-                            <constraint firstItem="qfx-Hw-6tF" firstAttribute="top" secondItem="XZe-KE-DTr" secondAttribute="bottom" constant="13" id="tsX-GB-363"/>
+                            <constraint firstItem="Abs-Yr-hTc" firstAttribute="top" secondItem="qfx-Hw-6tF" secondAttribute="bottom" constant="20" id="r8t-ve-dOt"/>
+                            <constraint firstItem="qfx-Hw-6tF" firstAttribute="top" secondItem="XZe-KE-DTr" secondAttribute="bottom" constant="20" id="tsX-GB-363"/>
                             <constraint firstItem="XZe-KE-DTr" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" constant="1" id="uwu-eP-6Qh"/>
                         </constraints>
                     </view>
