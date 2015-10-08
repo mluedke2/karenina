@@ -42,7 +42,7 @@ class ViewController: UIViewController {
     }
   }
   
-  @IBAction func heartTapped(sender : AnyObject) {
+  @IBAction func walkTapped(sender: AnyObject) {
     let taskViewController = ORKTaskViewController(task: WalkTask, taskRunUUID: nil)
     taskViewController.delegate = self
     taskViewController.outputDirectory = NSURL(fileURLWithPath: NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0], isDirectory: true)
@@ -76,10 +76,11 @@ extension ViewController: ORKTaskViewControllerDelegate {
   
   func taskViewController(taskViewController: ORKTaskViewController, didFinishWithReason reason: ORKTaskViewControllerFinishReason, error: NSError?) {
     
+    HealthKitManager.stopMockHeartData()
+    
     if (taskViewController.task?.identifier == "MusicTask"
       && reason == .Completed) {
         
-      HealthKitManager.stopMockHeartData()
       let clip = ResultParser.findClip(taskViewController.task)
       print("clip name: \(clip?.rawValue)")
         
@@ -100,7 +101,6 @@ extension ViewController: ORKTaskViewControllerDelegate {
     if (taskViewController.task?.identifier == "WalkTask"
       && reason == .Completed) {
         
-      HealthKitManager.stopMockHeartData()
       let heartURLs = ResultParser.findWalkHeartFiles(taskViewController.result)
       
       for url in heartURLs {
