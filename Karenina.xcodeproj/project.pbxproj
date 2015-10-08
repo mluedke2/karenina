@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FA1C0E801BC05C9A0064BCDB /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C0E7F1BC05C9A0064BCDB /* HealthKitManager.swift */; settings = {ASSET_TAGS = (); }; };
 		FA36773B1BBA666300427B81 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA36773A1BBA666300427B81 /* HealthKit.framework */; };
+		FA50A4D21BC6478600ECE2B2 /* MusicClip.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA50A4D11BC6478600ECE2B2 /* MusicClip.swift */; settings = {ASSET_TAGS = (); }; };
 		FA59C5A61AF3695900F7B26D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59C5A51AF3695900F7B26D /* AppDelegate.swift */; };
 		FA59C5A81AF3695900F7B26D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59C5A71AF3695900F7B26D /* ViewController.swift */; };
 		FA59C5AB1AF3695900F7B26D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA59C5A91AF3695900F7B26D /* Main.storyboard */; };
@@ -83,6 +84,7 @@
 		FA1C0E7F1BC05C9A0064BCDB /* HealthKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
 		FA36773A1BBA666300427B81 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		FA36773C1BBA666300427B81 /* Karenina.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Karenina.entitlements; sourceTree = "<group>"; };
+		FA50A4D11BC6478600ECE2B2 /* MusicClip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicClip.swift; sourceTree = "<group>"; };
 		FA59C5A01AF3695900F7B26D /* Karenina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Karenina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA59C5A41AF3695900F7B26D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA59C5A51AF3695900F7B26D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AppDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -178,6 +180,7 @@
 				FA7C5AB71BB9177600482145 /* WalkTask.swift */,
 				FA9245C21BBE494A008DAE4B /* MusicTask.swift */,
 				FA64CDBD1BBF6E6B0052DF0D /* MusicStepViewController.swift */,
+				FA50A4D11BC6478600ECE2B2 /* MusicClip.swift */,
 				FA64CDC11BBF77FA0052DF0D /* MusicStep.swift */,
 				FA1C0E7F1BC05C9A0064BCDB /* HealthKitManager.swift */,
 				FA5A76381BC06AC8006DAC35 /* ResultParser.swift */,
@@ -372,6 +375,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA50A4D21BC6478600ECE2B2 /* MusicClip.swift in Sources */,
 				FA59C5A81AF3695900F7B26D /* ViewController.swift in Sources */,
 				FA5A76391BC06AC8006DAC35 /* ResultParser.swift in Sources */,
 				FA59C5D71AF36C0700F7B26D /* ConsentTask.swift in Sources */,
