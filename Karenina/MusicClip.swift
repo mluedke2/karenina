@@ -6,7 +6,7 @@
 //  Copyright © 2015 Razeware. All rights reserved.
 //
 
-import ResearchKit
+import Foundation
 
 enum MusicClip: String {
   case Chill3 = "chill_preview_3"
