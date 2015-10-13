@@ -74,9 +74,9 @@ extension ViewController: ORKTaskViewControllerDelegate {
     }
   }
   
-  func taskViewController(taskViewController: ORKTaskViewController, didFinishWithReason reason: ORKTaskViewControllerFinishReason, error: NSError?) {
-    
-    HealthKitManager.stopMockHeartData()
+  func taskViewController(taskViewController: ORKTaskViewController,
+    didFinishWithReason reason: ORKTaskViewControllerFinishReason,
+    error: NSError?) {
     
     if (taskViewController.task?.identifier == "MusicTask"
       && reason == .Completed) {
@@ -92,6 +92,8 @@ extension ViewController: ORKTaskViewControllerDelegate {
         } catch {}
       }
     }
+    
+    HealthKitManager.stopMockHeartData()
     
     if (taskViewController.task?.identifier == "AudioTask"
       && reason == .Completed) {

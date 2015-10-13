@@ -18,7 +18,9 @@ public var MusicTask: ORKOrderedTask {
   
   steps += [instructionStep]
   
-  let configuration = ORKHealthQuantityTypeRecorderConfiguration(identifier: "heartRateConfig", healthQuantityType: HKQuantityType.quantityTypeForIdentifier(HKQuantityTypeIdentifierHeartRate)!, unit: HKUnit(fromString: "count/min"))
+  let configuration = ORKHealthQuantityTypeRecorderConfiguration(identifier: "heartRateConfig",
+    healthQuantityType: HKQuantityType.quantityTypeForIdentifier(HKQuantityTypeIdentifierHeartRate)!,
+    unit: HKUnit(fromString: "count/min"))
   
   let musicStep = MusicStep(identifier: "music")
   

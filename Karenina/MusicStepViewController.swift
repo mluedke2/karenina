@@ -18,7 +18,8 @@ class MusicStepViewController: ORKActiveStepViewController {
     
     if let step = step as? MusicStep {
       do {
-        try audioPlayer = AVAudioPlayer(contentsOfURL: step.clip.fileURL(), fileTypeHint: AVFileTypeMPEGLayer3)
+        try audioPlayer = AVAudioPlayer(contentsOfURL: step.clip.fileURL(),
+          fileTypeHint: AVFileTypeMPEGLayer3)
         audioPlayer?.play()
       } catch {}
     }

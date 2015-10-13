@@ -109,9 +109,12 @@ public class SurveyTask: NSObject, ORKTask {
   
   func findName(result: ORKTaskResult) -> String? {
     
-    if let stepResult = result.resultForIdentifier(nameStepID) as? ORKStepResult, let subResults = stepResult.results, let textQuestionResult = subResults[0] as? ORKTextQuestionResult {
-      
-      return textQuestionResult.textAnswer
+    if let stepResult = result.resultForIdentifier(nameStepID) as? ORKStepResult,
+      let subResults = stepResult.results
+      where subResults.count > 0,
+      let textQuestionResult = subResults[0] as? ORKTextQuestionResult {
+        
+        return textQuestionResult.textAnswer
     }
     return nil
   }
